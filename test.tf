@@ -16,3 +16,9 @@ resource "kubernetes_namespace" "example" {
     name = "my-first-namespace"
   }
 }
+
+resource "kubernetes_namespace" "example-1" {
+  metadata {
+    name = "my-first-namespace-1"
+  }
+}
