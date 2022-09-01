@@ -11,11 +11,6 @@ locals {
   sa = local.tfe_workspace_outputs.test_oke.terraform_sa
 }
 
-resource "kubernetes_namespace" "example" {
-  metadata {
-    name = "my-first-namespace"
-  }
-}
 
 resource "kubernetes_namespace" "example-1" {
   metadata {
