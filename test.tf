@@ -1,7 +1,8 @@
 provider "kubernetes" {
   insecure = true
   
-  host = local.oke.endpoints.public_endpoint
+  #host = local.oke.endpoints.public_endpoint
+  host = "https://129.152.15.28:6443"
   token = local.sa.data.token
 }
 
