@@ -3,7 +3,7 @@ provider "kubernetes" {
   
   #host = local.oke.endpoints.public_endpoint
   host = "https://129.152.15.28:6443"
-  token = local.sa.data.token
+  token = base64decode(local.sa.data.token)
 }
 
 locals {
