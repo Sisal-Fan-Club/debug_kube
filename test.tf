@@ -6,8 +6,8 @@ provider "kubernetes" {
 }
 
 locals {
-  oke = test_compartment = local.tfe_workspace_outputs.test_oke.test_oke
-  sa = test_compartment = local.tfe_workspace_outputs.test_oke.terraform_sa
+  oke = local.tfe_workspace_outputs.test_oke.test_oke
+  sa = local.tfe_workspace_outputs.test_oke.terraform_sa
 }
 
 resource "kubernetes_namespace" "example" {
